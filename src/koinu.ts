@@ -255,7 +255,7 @@ export const ThankYouMrTada = (s: string) => {
   const t = CJParser(s)
   const koinu = new Koinu();
   koinu.visit(t);
-  console.log(koinu.conv(D));
+  return koinu.conv(D);
 }
 
 ThankYouMrTada('赤')
